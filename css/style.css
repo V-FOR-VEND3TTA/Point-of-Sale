@@ -46,8 +46,8 @@ body {
 #ctotal { font-weight: 700; padding: 10px; }
 .cdel, .cqty, #cempty, #ccheckout { padding: 10px; }
 .cdel, #cempty, #ccheckout {
-  background: #9a2121;
-  border: 1px solid #9a2121;
+  background: #21649a;
+  border: 1px solid #21649a;
   color: #fff;
   font-weight: 700;
   cursor: pointer;

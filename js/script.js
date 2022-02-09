@@ -1,12 +1,12 @@
 var products = {
   // (A) PRODUCTS LIST
   list : {
-    1 : { name:"Banana", img:"banana.png", price: 12 },
-    2 : { name:"Cherry", img:"cherry.png", price: 23 },
-    3 : { name:"Ice Cream", img:"icecream.png", price: 54 },
-    4 : { name:"Orange", img:"orange.png", price: 65 },
-    5 : { name:"Strawberry", img:"strawberry.png", price: 34 },
-    6 : { name:"Watermelon", img:"watermelon.png", price: 67 }
+    1 : { name:"Banana", img:"banana.png", price: 2 },
+    2 : { name:"Biscuits", img:"biscuits.png", price: 15 },
+    3 : { name:"Juice", img:"juice.png", price: 9 },
+    4 : { name:"Coldrink", img:"coldrink.png", price: 25 },
+    5 : { name:"Bread", img:"bread.png", price: 20 },
+    6 : { name:"Eggs", img:"eggs.png", price: 12 }
   },
 
   // (B) DRAW HTML PRODUCTS LIST
@@ -41,7 +41,7 @@ var products = {
       // PRICE
       segment = document.createElement("div");
       segment.className = "pprice";
-      segment.innerHTML = "$" + p.price;
+      segment.innerHTML = "R" + p.price;
       pdt.appendChild(segment);
     }
   }
@@ -137,7 +137,7 @@ var cart = {
       item = document.createElement("div");
       item.className = "ctotal";
       item.id = "ctotal";
-      item.innerHTML ="TOTAL: $" + total;
+      item.innerHTML ="TOTAL: R" + total;
       wrapper.appendChild(item);
 
       // EMPTY BUTTON
@@ -179,7 +179,7 @@ var cart = {
       var total = 0;
       for (let id in cart.items) {
         total += cart.items[pid] * products.list[pid].price;
-        document.getElementById("ctotal").innerHTML ="TOTAL: $" + total;
+        document.getElementById("ctotal").innerHTML ="TOTAL: R" + total;
       }
     }
   },
